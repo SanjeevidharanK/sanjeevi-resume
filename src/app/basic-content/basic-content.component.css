@@ -2,7 +2,7 @@
   width: 95dvw;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  text-align: justify;
   align-items: center;
   margin: auto;
   padding: 10px 20px;
@@ -194,11 +194,17 @@
   .container{
     background: linear-gradient(to top,rgb(218, 67, 67),rgb(20, 20, 34));
     display: block;
+    width:fit-content;
+    overflow: hidden;
   }
   .sub-contain{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  }
+  p{
+    width: 90%;
+    text-align: justify;
   }
 
   .content{
