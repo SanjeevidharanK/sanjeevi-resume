@@ -1,0 +1,130 @@
+<div class="container">
+  <div class="skil">
+    <div class="ski">
+      <h1>Skills</h1>
+    </div>
+   <div class="sub-ski">
+    <div class="pm1">
+      <h2>PROGRAMMING LANGUAGES</h2>
+      <ul><li>Python</li>
+      <li>Java(Basic)</li></ul>
+    </div>
+    <div class="pm1">
+      <h2>LIBRARIES/FRAMEWORK</h2>
+      <ul><li>Angular</li>
+      <li>Typescript</li>
+      <li>React</li>
+      <li>Odoo</li>
+      <li>JavaScript</li>
+    </ul>
+    </div>
+    <div class="pm1">
+      <h2>TOOLS/PLATFORM</h2>
+      <ul><li>Linux</li>
+      <li>Git</li>
+    <li>HTML&CSS</li></ul>
+    </div>
+    <div class="pm1">
+      <h2>DATABASE</h2>
+      <ul><li>SQL</li></ul>
+    </div>
+   </div>
+  </div>
+  <div class="wrapper">
+   
+     <form [formGroup]="abform" (ngSubmit)="onSubmit()">
+      <div class="form">
+        <div class="input1">
+          <label for="name"><h3>Name</h3></label>
+          <input type="text" formControlName="name" name="name" id="" placeholder="Enter Your Name...">
+          <div *ngIf="abform.get('name')?.invalid && abform.get('name')?.touched">
+            <small *ngIf="abform.get('name')?.errors?.['required']">Please enter the name</small>
+            <small *ngIf="abform.get('name')?.errors?.['minlength']">Name has to be in min length of 8 characters</small>
+          </div>
+        </div>
+        <div class="input1">
+          <label for="email"><h3>Email</h3></label>
+          <input type="email" formControlName="email" name="name" id="" placeholder="Enter Your Name...">
+          <div *ngIf="abform.get('email')?.invalid && abform.get('email')?.touched">
+            <small *ngIf="abform.get('email')?.errors?.['required']">Email is Required</small>
+            <small *ngIf="abform.get('email')?.errors?.['pattern']">Please Enter the Valid Mail</small>
+          </div>
+        </div>
+        <div class="input2">
+          <label for="place"><h3>You From</h3></label>
+          <select name="place" id="" formControlName="place" (click)="chq()">
+            <option value="{{place}}" *ngFor="let place of places" (click)="chq()">{{place}}</option>
+          </select>
+          <div *ngIf="other">
+            <label for="other"><h3>Please Mention</h3></label>
+            <input formControlName="other" name="other" type="text" >
+          </div>
+          
+        </div>
+        <div class="input4">
+          <label for="comment"><h3>Leave a Comment</h3></label>
+          <textarea formControlName="comment" name="comment" id="" ></textarea>
+        </div>
+        <div class="sub">
+          <input type="submit">
+        </div>
+      </div>
+    </form>
+  </div>
+  
+</div>
+
+<div class="back">
+  <a href="" style="position: fixed;padding: 8px 12px;bottom:3%;right: 3%;background-color: wheat;text-decoration: maroon;">Back</a>
+</div>
+<!-- <div class="container">
+  <div class="skil">
+    <div class="ski">
+      <h1>Skills</h1>
+    </div>
+    <div class="sub-ski">
+      <ul>
+        <li>Angular</li>
+        <li>Python</li>
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
+        <li>Linux</li>
+        <li>Git</li>
+        <li>Odoo</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrapper">
+    <form [formGroup]="abform" (ngSubmit)="onSubmit(abform)">
+      <div class="form">
+        <div class="input1">
+          <label for="name"><h3>Name</h3></label>
+          <input type="text" formControlName="name" name="name" id="" placeholder="Enter Your Name...">
+          <div *ngIf="abform.get('name')?.invalid && abform.get('name')?.touched">
+            <small *ngIf="abform.get('name')?.errors?.['required']">Please enter the name</small>
+          </div>
+        </div>
+        <div class="input2">
+          <label for="place"><h3>You From</h3></label>
+          <select name="place" id="" formControlName="place" (change)="chq()">
+            <option value="{{place}}" *ngFor="let place of places">{{place}}</option>
+          </select>
+          <div *ngIf="other">
+            <label for="other"><h3>Please Mention</h3></label>
+            <input formControlName="other" name="other" type="text">
+          </div>
+        </div>
+        <div class="input4">
+          <label for="comment"><h3>Leave a Comment</h3></label>
+          <textarea formControlName="comment" name="comment" id=""></textarea>
+        </div>
+        <div class="sub">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </form>
+  </div>
+</div> -->

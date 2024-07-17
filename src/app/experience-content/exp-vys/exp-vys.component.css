@@ -1,0 +1,98 @@
+.ang{
+  width: 90dvw;
+  height: 90dvh;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.content{
+  margin: 10px auto;
+  width: fit-content;
+  height: fit-content;
+  border: 3px solid gold;
+  backdrop-filter: blur(1000px);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+ul li{
+  padding: 15px 25px;
+}
+
+.pgbar::after{
+  content: "";
+  position: absolute;
+  width: 90%;
+  border: 5px solid violet;
+  
+  left: 10px;
+  
+  animation: pggbar 1;
+  animation-duration: 4s;
+}
+.pgbar1::after{
+  content: "";
+  position: absolute;
+  width: 90%;
+  border: 5px solid indigo;
+  
+  left: 10px;
+  
+  animation: pggbar 1;
+  animation-duration: 4s;
+}
+.pgbar2::after{
+  content: "";
+  position: absolute;
+  width: 90%;
+  border: 5px solid blue;
+  
+  left: 10px;
+  
+  animation: pggbar 1;
+  animation-duration: 4s;
+}
+@keyframes pggbar {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+.pgbar3::after{
+  content: "";
+  position: absolute;
+  width: 65%;
+  border: 5px solid green;
+  
+  left: 10px;
+  
+  animation: pggbar2 1;
+  animation-duration: 4s;
+}
+.pgbar4::after{
+  content: "";
+  position: absolute;
+  width: 65%;
+  border: 5px solid yellow;
+  
+  left: 10px;
+  
+  animation: pggbar2 1;
+  animation-duration: 4s;
+}
+@keyframes pggbar2 {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}

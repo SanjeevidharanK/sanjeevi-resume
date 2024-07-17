@@ -1,0 +1,231 @@
+.container{
+  width: 90dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.skil{
+  width: 50%;
+  height: max-content;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.sub-ski{
+  width: 100%;
+  height: fit-content;
+  border: 2px solid yellow;
+  background:linear-gradient(to bottom,wheat,blue)
+}
+.ski{
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  border: 2px solid cyan;
+  background-color: blueviolet;
+}
+.wrapper{
+  width: 35%;
+  height: max-content;
+  border: 2px solid yellow;
+  background-color: wheat;
+  border-radius: 10px;
+}
+form{
+  margin: 20px auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+small{
+  background: linear-gradient(to right,rgb(8, 0, 8),rgb(255, 0, 0));
+  background-clip: text;
+  color: transparent;
+  font-weight:bolder;
+}
+.form{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.input1,.input2,.input3,.input4{
+  width: 80%;
+  display:block;
+  height:max-content;
+  margin: 20px auto;
+}
+input,textarea,select,label{
+  display: block;
+  width: 90%;
+  padding: 10px 10px;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+h3{
+  margin: 0;
+  padding: 0;
+}
+.sub{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.sub input{
+  display: block;
+  width: min-content;
+  height: max-content;
+  padding: 8px 12px;
+  color: wheat;
+  background-color: blue;
+  border: 1px solid wheat;
+}
+.sub input:hover{
+  background-color: wheat;
+  color: blue;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+.pm1{
+  width: 80%;
+  height: max-content;
+  border: 2px solid red;
+  margin: 20px auto;
+
+}
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+  
+}
+ul li{
+  padding: 4px 8px;
+  background: #007BFF;
+  color: #fff;
+}
+@media screen and (max-width:800px) {
+  .container{
+    height: max-content;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+  .wrapper{
+    width: 90%;
+  }
+  .skil{
+    width: fit-content;
+    /* height: fit-content; */
+    gap: 10px;
+  }
+  .ski{
+    width: 80%;
+  }
+  ul{
+    flex-wrap: wrap;
+  }
+  .sub-ski{
+    width: max-content;
+  }
+}
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skil {
+  margin-bottom: 20px;
+}
+
+.ski h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sub-ski ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sub-ski li {
+  background: #007BFF;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.wrapper {
+  margin-top: 20px;
+}
+
+.form h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form input[type="text"], .form input[type="submit"], .form select, .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+small {
+  color: red;
+}
+
+.sub {
+  text-align: center;
+}
+
+.input1, .input2, .input4 {
+  margin-bottom: 20px;
+} */
+.pm1:nth-child(2n){
+  background-color: whitesmoke;
+}
+.pm1:nth-child(2n-1){
+  background-color: rgb(121, 142, 236);
+}
