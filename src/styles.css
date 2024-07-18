@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
   height: 100dvh;
-  width: 100dvw;
+  width: fit-content;
   background:linear-gradient(to bottom,blue,white);
   background-repeat: no-repeat;
   overflow-x: hidden;
