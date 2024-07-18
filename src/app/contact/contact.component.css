@@ -120,15 +120,19 @@ ul li{
 }
 @media screen and (max-width:800px) {
   .container{
+    width: fit-content;
     height: max-content;
     flex-direction: column;
     justify-content: space-evenly;
+    word-break: break-word;
     gap: 50px;
   }
   .wrapper{
     width: 90%;
   }
+ 
   .skil{
+    
     width: fit-content;
     /* height: fit-content; */
     gap: 10px;
@@ -137,14 +141,17 @@ ul li{
     width: 80%;
   }
   ul{
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .li{
     width: fit-content;
   }
   .sub-ski{
-    width: max-content;
+    width: 90dvw;
   }
+  
 }
 /* body {
   font-family: Arial, sans-serif;
