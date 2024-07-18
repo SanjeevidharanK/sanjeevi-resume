@@ -4,7 +4,7 @@ body{
   width: 100dvw;
   background:linear-gradient(to bottom,blue,white);
   background-repeat: no-repeat;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 li{
   background: linear-gradient(to right,purple,teal);

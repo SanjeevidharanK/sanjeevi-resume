@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
   
 }
 .skil{
@@ -110,7 +111,7 @@ ul{
   align-items: center;
   list-style: none;
   gap: 5px;
-  
+  flex-wrap: wrap;
 }
 ul li{
   padding: 4px 8px;
@@ -137,6 +138,9 @@ ul li{
   }
   ul{
     flex-wrap: wrap;
+  }
+  .li{
+    width: fit-content;
   }
   .sub-ski{
     width: max-content;
