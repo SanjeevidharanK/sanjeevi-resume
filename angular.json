@@ -17,6 +17,7 @@
             "index": "src/index.html",
             "baseHref":"/sanjeevi-resume/",
             "main": "src/main.ts",
+            "proxyConfig": "src/proxy.conf.json" ,
             "polyfills": [
               "zone.js"
             ],

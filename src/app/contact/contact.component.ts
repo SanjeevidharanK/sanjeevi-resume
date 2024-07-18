@@ -40,7 +40,7 @@ export class ContactComponent {
     }
     console.log(this.abform.value,"working")
     this.service.post(this.abform.value).subscribe()
-    // data.reset()
+    this.abform.reset()
   }
 
 }
