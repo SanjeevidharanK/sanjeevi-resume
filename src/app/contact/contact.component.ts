@@ -16,7 +16,7 @@ export class ContactComponent {
 
   constructor(private fbuilder:FormBuilder,private service:ServiceService){
     this.abform = this.fbuilder.group({
-      name:['',[Validators.required,Validators.minLength(8)]],
+      name:['',[Validators.required]],//,Validators.minLength(8)
       email:['',[Validators.required,Validators.pattern(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)]],
       place:[''],
       other:[''],
